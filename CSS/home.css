@@ -98,9 +98,9 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding:  0 9%;
+  padding: 0 9%;
   z-index: 10000;
-  background: black;
+  background: #000;
 }
 
 .header .logo {

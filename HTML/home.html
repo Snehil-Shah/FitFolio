@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>complete responsive fitness and gym website design</title>
+    <title>Fitfolio</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -31,12 +31,35 @@
         <a href="#features">features</a>
         <a href="#pricing">pricing</a>
         <a href="#blogs">blogs</a>
-        <a href="#trainers">login</a>
+        <a href="#" id="login-topright">login</a>
     </nav>
 
 </header>
 
 <!-- header section ends     -->
+
+<!-- Login popup window starts -->
+<div class="login" id="login-window">
+    <h2 style="text-transform: uppercase; font-size: 2.5rem; color: aliceblue; width: 100%; text-align: center;">Login</h2>
+    <span class="close-btn">x</span>
+    <form action="#">
+        <div class="input-space" id="Email-input-box">
+            <input type="text" required id="emailinput">
+            <label for="emailinput">Email</label>
+        </div>
+        <div class="input-space" id="Password-input-box">
+            <input type="password" required id="pass-input">
+            <label for="pass-input">Password</label>
+        </div>
+        <div id="remember-forgot">
+            <label><input type="checkbox">Remember Me</label>
+            <a href="#">Forgot Password?</a>
+        </div>
+        <input type="submit" class="login-button" value="Login" action="#">
+        <div class="no-acc-yet">Don't have an account yet? <a href="#" style="font-size: 115%;"> Register!</a></div>
+    </form>
+</div>
+<!-- Login popup window ends -->
 
 <!-- home section starts  -->
 

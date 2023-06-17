@@ -120,6 +120,21 @@ section {
   color: #fff;
 }
 
+#login-topright{
+  position: relative;
+  border: white 2px solid;
+  padding: 6px 20px;
+  left: 12px;
+  border-radius: 5px;
+}
+
+#login-topright:hover{
+  background-color: #f00;
+  border: rgba(255, 255, 255, 0) 2px solid;;
+  padding: 7px 20px;
+  border-radius: 0;
+}
+
 .header .navbar a:hover {
   background: #f00;
 }
@@ -130,6 +145,141 @@ section {
   cursor: pointer;
   display: none;
 }
+
+.login{
+  background: transparent;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 30%;
+  height: 55%;
+  padding: 50px;
+  z-index: 3;
+  font-size: 1.5rem;
+  border: 1px solid rgba(99, 99, 99, 0.209);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.048) ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+  transform: scale(0);
+  transition: transform .5s ease;
+  translate: -50% -50%;
+}
+
+.login.active-popup{
+  transform: scale(1);
+  translate: -50% -50%;
+}
+
+
+#login-window form{
+  width: 100%;
+}
+
+#login-window .input-space{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1.5px solid white;
+  margin: 30px 0;
+  color: white;
+}
+
+input:focus + label, input:valid + label{
+  padding-bottom: 50px;
+}
+
+
+#login-window .input-space label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  font-weight: 500;
+  cursor: text;
+}
+
+#login-window .input-space input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 1em;
+  padding-left: 10px;
+}
+
+#remember-forgot{
+  font-size: 1.1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+#remember-forgot label input{
+  accent-color: red;
+  margin-right: 5px;
+}
+
+.login a{
+  color: red;
+  text-decoration: unset;
+  transition: none;
+}
+
+.login a:hover{
+  text-decoration: underline;
+}
+
+.login a:active{
+  color: rgb(255, 205, 205)
+}
+
+.login-button{
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 110%;
+  font-weight: bolder;
+  background-color: rgb(255, 255, 255);
+}
+
+.login-button:hover{
+  background-color: #f00;
+  color: #fff;
+  border-radius: 0;
+}
+
+.no-acc-yet{
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.close-btn{
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  font-weight: bolder;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.close-btn:hover{
+  color: #f00;
+  text-shadow: rgb(37, 10, 10) 1px 0 10px;
+}
+
 
 .home {
   padding: 0;

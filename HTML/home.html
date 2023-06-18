@@ -39,25 +39,72 @@
 <!-- header section ends     -->
 
 <!-- Login popup window starts -->
+<div class="wrapper">
+
+<span class="close-btn">x</span>
 <div class="login" id="login-window">
     <h2 style="text-transform: uppercase; font-size: 2.5rem; color: aliceblue; width: 100%; text-align: center;">Login</h2>
-    <span class="close-btn">x</span>
-    <form action="#">
+    
+    <form action="../Backend/login.php" method="post">
         <div class="input-space" id="Email-input-box">
-            <input type="text" required id="emailinput">
+            <input type="text" name="email" required id="emailinput">
             <label for="emailinput">Email</label>
         </div>
         <div class="input-space" id="Password-input-box">
-            <input type="password" required id="pass-input">
+            <input type="password" required id="pass-input" name="password">
             <label for="pass-input">Password</label>
         </div>
-        <div id="remember-forgot">
+        <div class="remember-forgot">
             <label><input type="checkbox">Remember Me</label>
             <a href="#">Forgot Password?</a>
         </div>
-        <input type="submit" class="login-button" value="Login" action="#">
-        <div class="no-acc-yet">Don't have an account yet? <a href="#" style="font-size: 115%;"> Register!</a></div>
+        <input type="submit" class="login-button" value="Login">
+        <div class="no-acc-yet">Don't have an account yet? <a href="#" style="font-size: 115%;" class="register-link"> Register!</a></div>
     </form>
+</div>
+<div class="register" id="registration-window">
+    <h2 style="text-transform: uppercase; font-size: 2.5rem; color: aliceblue; width: 100%; text-align: center;">Register</h2>
+    <form action="../Backend/register.php" method="post">
+        <div class="input-space" id="name-input-box">
+            <input type="text" name="name" required id="nameinput">
+            <label for="nameinput">Name</label>
+        </div>
+        <div class="input-space" id="Email-input-box-register">
+            <input type="text" name="email" required id="emailinputregister">
+            <label for="emailinput">Email</label>
+        </div>
+        <div class="horizontal-input">
+            <div class="input-space" id="age-input-box">
+                <input type="number" name="age" required id="ageinput">
+                <label for="ageinput">Age</label>
+            </div>
+            <div class="input-space" id="height-input-box">
+                <input type="number" name="height" required id="heightinput">
+                <label for="heightinput">Height</label>
+            </div>
+            <div class="input-space" id="weight-input-box">
+                <input type="number" name="weight" required id="weightinput">
+                <label for="weightinput">Weight</label>
+            </div>
+        </div>
+        <div class="input-space" id="Password-input-box-register">
+            <input type="password" required id="pass-input-register" name="password">
+            <label for="pass-input">Password</label>
+        </div>
+        <div class="remember-forgot" id="subscription-radio">
+            <label for="Free"><input type="radio" name="subscription" value="Free" id="Free">Free</label>
+            <label for="Basic"><input type="radio" name="subscription" value="Basic" id="Basic">Basic</label>
+            <label for="Premium"><input type="radio" name="subscription" value="Premium" id="Premium">Premium</label>
+        </div>
+        <div class="remember-forgot">
+            <label id="tnc"><input type="checkbox" required>I agree to the terms & conditions</label>
+        </div>
+        <input type="submit" class="login-button" value="Register">
+        <div class="no-acc-yet">Already have an account? <a href="#" style="font-size: 115%;" class="login-link"> Login!</a></div>
+    </form>
+</div>
+
+
 </div>
 <!-- Login popup window ends -->
 

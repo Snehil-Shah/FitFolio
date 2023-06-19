@@ -86,3 +86,41 @@ btnpopup.addEventListener('click',()=>{
 closepanel.addEventListener('click',()=>{
     wrapper.classList.remove('active-popup');
 })
+
+// =====
+const regpopup1 = document.querySelector('#regpopup1')
+const regpopup2 = document.querySelector('#regpopup2')
+const regpopup3 = document.querySelector('#regpopup3')
+const regpopup4 = document.querySelector('#regpopup4')
+const regpopup5 = document.querySelector('#regpopup5')
+const regpopup6 = document.querySelector('#regpopup6')
+const regpopup7 = document.querySelector('#regpopup7')
+regpopup1.addEventListener('click',()=>{
+    wrapper.classList.add('active-popup');
+    wrapper.classList.add('active');
+})
+regpopup2.addEventListener('click',()=>{
+    wrapper.classList.add('active-popup');
+    wrapper.classList.add('active');
+})
+regpopup3.addEventListener('click',()=>{
+    wrapper.classList.add('active-popup');
+    wrapper.classList.add('active');
+})
+regpopup4.addEventListener('click',()=>{
+    wrapper.classList.add('active-popup');
+    wrapper.classList.add('active');
+})
+regpopup5.addEventListener('click',()=>{
+    wrapper.classList.add('active-popup');
+    wrapper.classList.add('active');
+})
+regpopup6.addEventListener('click',()=>{
+    wrapper.classList.add('active-popup');
+    wrapper.classList.add('active');
+})
+regpopup7.addEventListener('click',()=>{
+    wrapper.classList.add('active-popup');
+    wrapper.classList.add('active');
+})
+//=====

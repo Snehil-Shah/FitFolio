@@ -157,7 +157,7 @@ input{
   left: 50%;
   transform: translate(-50%,-50%);
   width: 30%;
-  height: 54%;
+  height: 55%;
   padding: 50px;
   z-index: 3;
   font-size: 1.5rem;
@@ -179,7 +179,7 @@ input{
 .wrapper.active-popup{
   transform: scale(1);
   translate: -50% -50%;
-  height: 54%;
+  height: 55%;
   transition: height .2s ease, transform .5s ease;
 }
 

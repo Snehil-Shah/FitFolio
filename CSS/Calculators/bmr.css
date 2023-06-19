@@ -14,7 +14,7 @@
 }
 
 html {
-  font-size: 68%;
+  font-size: 66%;
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
   overflow-x: hidden;
@@ -57,7 +57,7 @@ body {
     left: 0;
     top: 25px;
     font-size: 4rem;
-    transform: translateX(-260px);
+    transform: translateX(-245px);
   }
   
   .logo span {

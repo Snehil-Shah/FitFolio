@@ -14,7 +14,7 @@
 }
 
 html {
-  font-size: 68%;
+  font-size: 66%;
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
   overflow-x: hidden;
@@ -57,7 +57,7 @@ body {
     left: 0;
     top: 25px;
     font-size: 4rem;
-    transform: translateX(-260px);
+    transform: translateX(-245px);
   }
   
   .logo span {
@@ -111,9 +111,9 @@ h2{
 
 input, select{
     border-radius: 5px;
-    width: 90%;
+    width: 100%;
     height: 32px;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     padding: 0 5px;
     background-color: rgb(237, 237, 237);
 }

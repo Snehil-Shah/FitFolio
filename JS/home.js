@@ -68,10 +68,18 @@ var swiper = new Swiper(".blogs-slider", {
 });
 
 // login panel popup code
-const wrapper = document.querySelector('.login')
+const wrapper = document.querySelector('.wrapper')
 const btnpopup = document.querySelector('#login-topright')
 const closepanel = document.querySelector('.close-btn')
+const loginlink = document.querySelector('.login-link')
+const registerlink = document.querySelector('.register-link')
 
+registerlink.addEventListener('click',()=>{
+    wrapper.classList.add('active');
+})
+loginlink.addEventListener('click',()=>{
+    wrapper.classList.remove('active');
+})
 btnpopup.addEventListener('click',()=>{
     wrapper.classList.add('active-popup');
 })

@@ -39,25 +39,72 @@
 <!-- header section ends     -->
 
 <!-- Login popup window starts -->
+<div class="wrapper">
+
+<span class="close-btn">x</span>
 <div class="login" id="login-window">
     <h2 style="text-transform: uppercase; font-size: 2.5rem; color: aliceblue; width: 100%; text-align: center;">Login</h2>
-    <span class="close-btn">x</span>
-    <form action="#">
+    
+    <form action="../Backend/login.php" method="post">
         <div class="input-space" id="Email-input-box">
-            <input type="text" required id="emailinput">
+            <input type="text" name="email" required id="emailinput">
             <label for="emailinput">Email</label>
         </div>
         <div class="input-space" id="Password-input-box">
-            <input type="password" required id="pass-input">
+            <input type="password" required id="pass-input" name="password">
             <label for="pass-input">Password</label>
         </div>
-        <div id="remember-forgot">
+        <div class="remember-forgot">
             <label><input type="checkbox">Remember Me</label>
             <a href="#">Forgot Password?</a>
         </div>
-        <input type="submit" class="login-button" value="Login" action="#">
-        <div class="no-acc-yet">Don't have an account yet? <a href="#" style="font-size: 115%;"> Register!</a></div>
+        <input type="submit" class="login-button" value="Login">
+        <div class="no-acc-yet">Don't have an account yet? <a href="#" style="font-size: 115%;" class="register-link"> Register!</a></div>
     </form>
+</div>
+<div class="register" id="registration-window">
+    <h2 style="text-transform: uppercase; font-size: 2.5rem; color: aliceblue; width: 100%; text-align: center;">Register</h2>
+    <form action="../Backend/register.php" method="post">
+        <div class="input-space" id="name-input-box">
+            <input type="text" name="name" required id="nameinput">
+            <label for="nameinput">Name</label>
+        </div>
+        <div class="input-space" id="Email-input-box-register">
+            <input type="text" name="email" required id="emailinputregister">
+            <label for="emailinput">Email</label>
+        </div>
+        <div class="horizontal-input">
+            <div class="input-space" id="age-input-box">
+                <input type="number" name="age" required id="ageinput">
+                <label for="ageinput">Age</label>
+            </div>
+            <div class="input-space" id="height-input-box">
+                <input type="number" name="height" required id="heightinput">
+                <label for="heightinput">Height</label>
+            </div>
+            <div class="input-space" id="weight-input-box">
+                <input type="number" name="weight" required id="weightinput">
+                <label for="weightinput">Weight</label>
+            </div>
+        </div>
+        <div class="input-space" id="Password-input-box-register">
+            <input type="password" required id="pass-input-register" name="password">
+            <label for="pass-input">Password</label>
+        </div>
+        <div class="remember-forgot" id="subscription-radio">
+            <label for="Free"><input type="radio" name="subscription" value="Free" id="Free">Free</label>
+            <label for="Basic"><input type="radio" name="subscription" value="Basic" id="Basic">Basic</label>
+            <label for="Premium"><input type="radio" name="subscription" value="Premium" id="Premium">Premium</label>
+        </div>
+        <div class="remember-forgot">
+            <label id="tnc"><input type="checkbox" required>I agree to the terms & conditions</label>
+        </div>
+        <input type="submit" class="login-button" value="Register">
+        <div class="no-acc-yet">Already have an account? <a href="#" style="font-size: 115%;" class="login-link"> Login!</a></div>
+    </form>
+</div>
+
+
 </div>
 <!-- Login popup window ends -->
 
@@ -441,10 +488,10 @@
                     <img src="../Images/Home/blog-4.jpg" alt="">
                 </div>
                 <div class="content">
-                    <div class="link"> <a href="#">FitFolio Originals</a> <span>|</span> <a href="#">21st may, 2021</a> </div>
-                    <h3>fitness is not about being better than someone else</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
-                    <a href="#" class="btn">read more</a>
+                    <div class="link"> <a href="#">FitFolio Originals</a> <span>|</span> <a href="#">13th May, 2023</a> </div>
+                    <h3>Incorporate Healthy Habits into Your Life with Habit Stacking</h3>
+                    <p>You’ll learn how to make a plan to implement new habits, how to use habit stacking to build on existing habits, and how habits can help you create a new identity. </p>
+                    <a href="../HTML/blog4/blog4.html" class="btn">read more</a>
                 </div>
             </div>
 
@@ -453,10 +500,10 @@
                     <img src="../Images/Home/blog-5.jpg" alt="">
                 </div>
                 <div class="content">
-                    <div class="link"> <a href="#">FitFolio Originals</a> <span>|</span> <a href="#">21st may, 2021</a> </div>
-                    <h3>fitness is not about being better than someone else</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, tenetur?</p>
-                    <a href="#" class="btn">read more</a>
+                    <div class="link"> <a href="#">FitFolio Originals</a> <span>|</span> <a href="#">11 June, 2023</a> </div>
+                    <h3>5 Ways to Heal an Unhealthy Relationship with Food</h3>
+                    <p>An unhealthy relationship with food can form for many reasons. Whether your parents or caregivers were long-term dieters.</p>
+                    <a href="../HTML/blog5/blog5.html" class="btn">read more</a>
                 </div>
             </div>
 
@@ -500,7 +547,7 @@
             <h3>opening hours</h3>
             <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
             <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
-            <p> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </p>
+            <p> <i class="fas fa-envelope"></i> fitfolio@gmail.com </p>
             <p> <i class="fas fa-map"></i> mumbai, india - 400104 </p>
             <div class="share">
                 <a href="#" class="fab fa-facebook-f"></a>
@@ -523,7 +570,7 @@
 
 </section>
 
-<div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div>
+<div class="credit"> created by <span>FitFolio Developers</span> | all rights reserved! </div>
 
 <!-- footer section ends -->
 

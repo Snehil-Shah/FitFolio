@@ -2,74 +2,28 @@
 <html>
 <head>
   <title>BMR Calculator</title>
-  <style>
-    body {
-      background-color: black;
-      color: white;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    h1 {
-      color: red;
-      text-align: center;
-    }
-
-    form {
-      width: 300px;
-      text-align: center;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    input[type="number"],
-    select {
-      padding: 5px;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    button {
-      padding: 5px 10px;
-      background-color: red;
-      color: white;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-    }
-
-    #result {
-      margin-top: 20px;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="../../CSS/Calculators/bmr.css">
   <script src="../../JS/Calculator/bmr.js"></script>
 </head>
 <body>
-  <h1>BMR Calculator:        </h1>
+  <a href="#" class="logo"> <span>Fit</span>Folio </a>
+  <h1><span style="color: red;">BMR</span> Calculator        </h1>
+  <p>The Basal Metabolic Rate (BMR) Calculator estimates your basal metabolic rate—the amount of energy expended while at rest in a neutrally temperate environment, and in a post-absorptive state (meaning that the digestive system is inactive, which requires about 12 hours of fasting).</p>
   <form>
-    <label for="weight">Weight (in kilograms):</label>
-    <input type="number" id="weight" required><br>
-
-    <label for="height">Height (in centimeters):</label>
-    <input type="number" id="height" required><br>
-
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight" required>
+    
+    <label for="height">Height (cm):</label>
+    <input type="number" id="height" required>
+    
     <label for="age">Age:</label>
-    <input type="number" id="age" required><br>
+    <input type="number" id="age" required>
 
     <label for="gender">Gender:</label>
     <select id="gender">
       <option value="male">Male</option>
       <option value="female">Female</option>
     </select><br>
-
     <button type="button" onclick="calculateBMR()">Calculate</button>
   </form>
 

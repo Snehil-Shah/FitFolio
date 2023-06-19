@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #000;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #f00;
+}
+
+body {
+  background: #000;
+  width: 60%;
+  margin: auto;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  gap: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../../Images/Home/banner-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../Images/Home/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.logo {
+    font-weight: bolder;
+    color: #fff;
+    font-size: 3rem;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    font-size: 4rem;
+    transform: translateX(-230px);
+  }
+  
+  .logo span {
+    color: #f00;
+  }
+h1{
+    font-size: 4rem;
+}
+
+p{
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+form{
+     width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    font-size: 2rem;
+}
+button{
+    width: 60%;
+    height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 110%;
+  font-weight: bolder;
+  background-color: rgb(255, 255, 255);
+  transform: translateX(-50%);
+}
+label{
+  text-align: end;
+}
+button:hover{
+    background-color: #f00;
+  color: #fff;
+  border-radius: 0;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+input, select{
+    border-radius: 5px;
+    width: 50%;
+    height: 32px;
+    font-size: 1.8rem;
+    padding: 0 5px;
+    background-color: rgb(237, 237, 237);
+}

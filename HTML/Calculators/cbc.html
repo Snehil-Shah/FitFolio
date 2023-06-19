@@ -1,65 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Calorie Burn Calculator</title>
-  <style>
-    body {
-      background-color: black;
-      color: red;
-      text-align: center;
-      font-family: Arial, sans-serif;
-    }
-
-    h1 {
-      margin-top: 40px;
-    }
-
-    form {
-      margin-top: 20px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    input[type="number"] {
-      border-radius: 8px;
-      width: 200px;
-      padding: 5px;
-    }
-
-    button {
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: red;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
+  <title>Calories Burned Calculator</title>
+  <link rel="stylesheet" href="../../CSS/Calculators/cbc.css">
+  <script src="../../JS/Calculator/cbc.js"></script>
 </head>
 <body>
-  <h1>Calorie Burn Calculator</h1>
+  <a href="#" class="logo"> <span>Fit</span>Folio </a>
+  <h1><span style="color: red;">Calories</span> Burned Calculator</h1>
+  <p>The number of calories that the body burns during regular daily activities or exercise is dependent on various factors, so it is not an exact science. The results of this calculator (and any other) are based on standardized data that references an "average" person, so it is only an estimate.</p>
   <form>
-    <label for="weight">Weight (in kilograms):</label>
-    <input type="number" id="weight" required><br>
-
-    <label for="duration">Duration (in minutes):</label>
-    <input type="number" id="duration" required><br>
-
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight" step="any" required>
+    
+    <label for="duration">Duration (min):</label>
+    <input type="number" id="duration" required>
+    
     <label for="activity">Activity:</label>
     <select id="activity">
-      <option value="1.5">Walking</option>
-      <option value="3.5">Running</option>
-      <option value="6">Cycling</option>
+      <option value="1.8">Walking (5 km/h)</option>
+      <option value="5.0">Cycling (12-14 km/h)</option>
+      <option value="8.0">Running (8 km/h)</option>
     </select><br>
 
-    <button type="button" onclick="calculateCalories()">Calculate</button>
+  <button type="button" onclick="calculateCalories()">Calculate</button>
   </form>
-
   <h2 id="result"></h2>
-
-  <script src="../../JS/Calculator/cbc.js"></script>
+  
+  
 </body>
 </html>

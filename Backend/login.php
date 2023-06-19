@@ -27,7 +27,7 @@ while($row = $result->fetch_assoc()) {
 }
 if ($trigger==0){
     $alert="henlo";
-    // header( 'Location: ../HTML/home.html' );
+    header( 'Location: ../HTML/sorry.html' );
     echo "sorry";
 }
 

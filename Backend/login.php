@@ -20,8 +20,8 @@ $result = $conn->query($sql);
 $trigger=0;
 while($row = $result->fetch_assoc()) {
     if ($email==$row["Email"] && $password==$row["Pass"]){
-        echo "auth successfull";
         $trigger++;
+        header('Location: ../HTML/home2.html');
         break;
     }
 }

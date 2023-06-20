@@ -13,15 +13,42 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/home2.css">
 
     <!-- drop down arrow google-font link -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-   
 
 </head>
 <body>
-    
+
+<?php
+
+//Storing credentials from registration form
+$name=$_POST["name"];
+$age=$_POST["age"];
+$height=$_POST["height"];
+$weight=$_POST["weight"];
+$email=$_POST["email"];
+$password=$_POST["password"];
+$subscription=$_POST["subscription"];
+
+//Creating connection to fitfolio database
+$conn= new mysqli("localhost","root","password","fitfolio");
+
+//Checking connection
+if($conn->connect_error){
+die("connection failed:".$conn->connect_error);
+}
+
+//Inserting Data
+$sql = "INSERT INTO users VALUES('$email','$password','$name','$subscription',$age,$height,$weight);";
+
+$conn->query($sql);
+
+$conn->close();
+  
+?>
+
 <!-- header section starts      -->
 
 <header class="header">
@@ -36,15 +63,21 @@
         <a href="#features">features</a>
         <a href="#pricing">pricing</a>
         <div class="calc-dropdown">
-          <a href="#trainers" style="width: 150.1px; text-align: center; padding-left: 2.0039rem;">Calculators<span class="material-symbols-outlined">expand_more</span></a>
-            <div class="calc-list">
-                <a href="Calculators/bmi.html">BMI</a>
-                <a href="Calculators/bmr.html">BMR</a>
-                <a href="Calculators/cbc.html">CBC</a>
-            </div>
-        </div>  
+            <a href="#trainers" style="width: 150.1px; text-align: center; padding-left: 2.0039rem;">Calculators<span class="material-symbols-outlined">expand_more</span></a>
+              <div class="calc-list">
+                  <a href="Calculators/bmi.html">BMI</a>
+                  <a href="Calculators/bmr.html">BMR</a>
+                  <a href="Calculators/cbc.html">CBC</a>
+              </div>
+          </div>  
         <a href="#blogs">blogs</a>
-        <a href="#" id="login-topright">login</a>
+        <div class="calc-dropdown">
+        <a href="#" class="login-topright"><p>Profile <i class="fas fa-user-edit"></i></p></a>
+           <div class="calc-list2">
+              <p style="font-size: 1.54rem; color: white; display: inline-block; padding-left: 2rem; padding-right: 2rem; padding-top: 1.5rem;"><?php echo $name ?> <br><br> <?php echo $subscription ?></p>
+              <a href="home.html" class="logout" style="width: 100%; font-size: 1.8rem; color: red; padding-top: 1.9rem;">Logout</a>
+           </div>
+        </div>
     </nav>
 
 </header>
@@ -52,13 +85,13 @@
 <!-- header section ends     -->
 
 <!-- Login popup window starts -->
-<div class="wrapper">
+<!-- <div class="wrapper">
 
 <span class="close-btn">x</span>
 <div class="login" id="login-window">
     <h2 style="text-transform: uppercase; font-size: 2.5rem; color: aliceblue; width: 100%; text-align: center;">Login</h2>
     
-    <form action="login.php" method="post">
+    <form action="../Backend/login.php" method="post">
         <div class="input-space" id="Email-input-box">
             <input type="text" name="email" required id="emailinput">
             <label for="emailinput">Email</label>
@@ -77,7 +110,7 @@
 </div>
 <div class="register" id="registration-window">
     <h2 style="text-transform: uppercase; font-size: 2.5rem; color: aliceblue; width: 100%; text-align: center;">Register</h2>
-    <form action="register.php" method="post">
+    <form action="../Backend/register.php" method="post">
         <div class="input-space" id="name-input-box">
             <input type="text" name="name" required id="nameinput">
             <label for="nameinput">Name</label>
@@ -118,7 +151,7 @@
 </div>
 
 
-</div>
+</div> -->
 <!-- Login popup window ends -->
 
 <!-- home section starts  -->
@@ -133,7 +166,7 @@
                 <div class="content">
                     <span>be strong, be fit</span>
                     <h3>Make yourself stronger than your excuses.</h3>
-                    <a href="#" class="btn" id="regpopup1">get started</a>
+                    <a href="#" class="btn">get started</a>
                 </div>
             </div>
 
@@ -141,7 +174,7 @@
                 <div class="content">
                     <span>be strong, be fit</span>
                     <h3>Make yourself stronger than your excuses.</h3>
-                    <a href="#" class="btn" id="regpopup2">get started</a>
+                    <a href="#" class="btn">get started</a>
                 </div>
             </div>
 
@@ -149,7 +182,7 @@
                 <div class="content">
                     <span>be strong, be fit</span>
                     <h3>Make yourself stronger than your excuses.</h3>
-                    <a href="#" class="btn" id="regpopup3">get started</a>
+                    <a href="#" class="btn">get started</a>
                 </div>
             </div>
 
@@ -262,7 +295,7 @@
         <p> <i class="fas fa-check"></i> weight lifting </p>
         <p> <i class="fas fa-check"></i> diet plans </p>
         <p> <i class="fas fa-check"></i> overall results </p>
-        <a href="#" class="btn" id="regpopup4">all pricing</a>
+        <a href="#" class="btn">all pricing</a>
     </div>
 
     <div class="plan basic">
@@ -275,7 +308,7 @@
         <p> <i class="fas fa-check"></i> diet plans </p>
         <p> <i class="fas fa-check"></i> overall results </p>
        </div>
-       <a href="#" class="btn" id="regpopup5">get started</a>
+       <a href="#" class="btn">get started</a>
     </div>
 
     <div class="plan">
@@ -288,7 +321,7 @@
         <p> <i class="fas fa-check"></i> diet plans </p>
         <p> <i class="fas fa-check"></i> overall results </p>
        </div>
-       <a href="#" class="btn" id="regpopup6">get started</a>
+       <a href="#" class="btn">get started</a>
     </div>
 
 </section>
@@ -372,7 +405,7 @@
     <span>join us now</span>
     <h3>get upto 50% discount</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat architecto nesciunt aut sapiente quis inventore quam vitae quod illum incidunt.</p>
-    <a href="#" class="btn" id="regpopup7">get discount</a>
+    <a href="#" class="btn">get discount</a>
 
 </section>
 

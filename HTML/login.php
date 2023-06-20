@@ -18,9 +18,62 @@
     <!-- drop down arrow google-font link -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-
 </head>
 <body>
+
+<?php
+
+//Storing email & password from login form for auth
+$email=$_POST["email"];
+$password=$_POST["password"];
+
+//Creating connection to fitfolio database
+$conn= new mysqli("localhost","root","password","fitfolio");
+
+//Checking connection
+if($conn->connect_error){
+die("connection failed:".$conn->connect_error);
+}
+
+//Fetching Data 
+$sql = "SELECT Email, Pass FROM users";
+$result = $conn->query($sql);
+
+// Authorizing Entered credentials with Database entries
+$trigger=0;
+while($row = $result->fetch_assoc()) {
+    if ($email==$row["Email"] && $password==$row["Pass"]){
+        $trigger++;
+        break;
+    }
+}
+if ($trigger==0){
+    header( 'Location: sorry.html' );
+}
+$conn->close();
+
+//Creating connection to fitfolio database
+$conn= new mysqli("localhost","root","password","fitfolio");
+
+//Checking connection
+if($conn->connect_error){
+die("connection failed:".$conn->connect_error);
+}
+
+//Fetching Data 
+$sql = "SELECT UserName, Subscription, Age, Height_cm, Weight_kg FROM users WHERE Email='$email'";
+$result = $conn->query($sql);
+$row = $result->fetch_assoc();
+
+$name=$row["UserName"];
+$age=$row["Age"];
+$height=$row["Height_cm"];
+$weight=$row["Weight_kg"];
+$subscription=$row["Subscription"];
+
+$conn->close();
+  
+?>
 
 <!-- header section starts      -->
 
@@ -44,7 +97,13 @@
               </div>
           </div>  
         <a href="#blogs">blogs</a>
-        <a href="#" class="login-topright"><p> <i class="fas fa-user-edit"></i></p></a>
+        <div class="calc-dropdown">
+        <a href="#" class="login-topright"><p>Profile <i class="fas fa-user-edit"></i></p></a>
+           <div class="calc-list2">
+              <p style="font-size: 1.54rem; color: white; display: inline-block; padding-left: 2rem; padding-right: 2rem; padding-top: 1.5rem;"><?php echo $name ?> <br><br> <?php echo $subscription ?></p>
+              <a href="home.html" class="logout" style="width: 100%; font-size: 1.8rem; color: red; padding-top: 1.9rem;">Logout</a>
+           </div>
+        </div>
     </nav>
 
 </header>
@@ -52,7 +111,7 @@
 <!-- header section ends     -->
 
 <!-- Login popup window starts -->
-<div class="wrapper">
+<!-- <div class="wrapper">
 
 <span class="close-btn">x</span>
 <div class="login" id="login-window">
@@ -118,7 +177,7 @@
 </div>
 
 
-</div>
+</div> -->
 <!-- Login popup window ends -->
 
 <!-- home section starts  -->

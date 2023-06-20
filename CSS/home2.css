@@ -149,6 +149,24 @@ input{
   background: #000;
 }
 
+.calc-list2{
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(5px);
+}
+
+.calc-dropdown:hover .calc-list2{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.logout:hover{
+  text-decoration: underline; 
+  background: none !important;
+        }
+
 .calc-dropdown:hover .calc-list{
   display: block;
   width: 100%;

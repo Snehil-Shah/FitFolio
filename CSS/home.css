@@ -132,6 +132,8 @@ input{
   'opsz' 48;
   position: relative;
   top: 6px;
+  padding: 0;
+  margin: 0;
 }
 
 .calc-dropdown{

@@ -85,7 +85,7 @@ $conn->close();
 
     <nav class="navbar">
         <a href="#home">home</a>
-        <a href="#about"> Stats</a>
+        <a href="#about">Stats</a>
         <a href="#features">features</a>
         
         <div class="calc-dropdown">
@@ -192,7 +192,7 @@ $conn->close();
                 <div class="content">
                     <span>be strong, be fit</span>
                     <h3>Make yourself stronger than your excuses.</h3>
-                    <a href="#" class="btn">Welcome to Fitfolio <?php echo $name ?></a>
+                    <span style="font-size: 3rem; padding-left: 5px;">Welcome, <?php echo $name ?></span>
                 </div>
             </div>
 
@@ -200,7 +200,7 @@ $conn->close();
                 <div class="content">
                     <span>be strong, be fit</span>
                     <h3>Make yourself stronger than your excuses.</h3>
-                    <a href="#" class="btn">get started</a>
+                    <span style="font-size: 3rem; padding-left: 5px;">Welcome, <?php echo $name ?></span>
                 </div>
             </div>
 
@@ -208,7 +208,7 @@ $conn->close();
                 <div class="content">
                     <span>be strong, be fit</span>
                     <h3>Make yourself stronger than your excuses.</h3>
-                    <a href="#" class="btn">get started</a>
+                    <span style="font-size: 3rem; padding-left: 5px;">Welcome, <?php echo $name ?></span>
                 </div>
             </div>
 
@@ -227,7 +227,7 @@ $conn->close();
 <section class="about" id="about">
 
     <div class="image">
-        <img src="../Images/Home/about-img.jpg" alt="">
+        <img src="../Images/Home/about-img2.jpg" alt="">
     </div>
 
     <div class="content">
@@ -237,24 +237,24 @@ $conn->close();
         <div class="box-container">
             <div class="box">
                 <h3><i class="fas fa-check"></i>AGE</h3>
-                <p>Age is not a limitation; it's a testament to the strength and resilience acquired through the years.
-                   <br> Age entered by you is <?php echo $age?>                </p>
+                <p>Age is not a limitation, it's a testament to the strength and resilience acquired through the years.
+                   <br> You are <?php echo $age?> years young.               </p>
             </div>
             <div class="box">
                 <h3><i class="fas fa-check"></i>HEIGHT</h3>
                 <p>Stand tall, for your height is a unique part of your identity. Embrace it with confidence.
-                   <br> Height entered by you is <?php echo $height?>cm           </p>
+                   <br> You stand <?php echo $height?> cm Tall.          </p>
             </div>
             <div class="box">
                 <h3><i class="fas fa-check"></i>WEIGHT</h3>
                 <p>You are more than your weight; you are a living, breathing masterpiece capable of so much more than a numerical value.
-                    <br>Weight entered by you is <?php echo $weight?>kg
+                    <br>Your weight is <?php echo $weight?> kg.
                 </p>
             </div>
             <div class="box">
                 <h3><i class="fas fa-check"></i>SUBSCRIPTION</h3>
                 <p>Here we believe in transforming lives through the power of fitness.
-                    <br>Subscription chosen by you is: <?php echo $subscription?> 
+                    <br>Your Subscription: <?php echo $subscription?> Plan.
                 </p>
             </div>
         </div>
@@ -265,55 +265,9 @@ $conn->close();
 
 <!-- stats section ends -->
 
-<!-- features section starts  -->
 
-<section class="features" id="features">
 
-    <h1 class="heading"> <span>gym features</span> </h1>
 
-    <div class="box-container">
-
-        <div class="box">
-            <div class="image">
-                <img src="../Images/Home/f-img-1.jpg" alt="">
-            </div>
-            <div class="content">
-                <img src="../Images/Home/icon-1.png" alt="">
-                <h3>body building</h3>
-                <p>Are you ready to elevate your fitness journey to new heights? Look no further than the ultimate destination for those who seek excellence in their pursuit of health and wellness.</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-        </div>
-
-        <div class="box second">
-            <div class="image">
-                <img src="../Images/Home/f-img-2.jpg" alt="">
-            </div>
-            <div class="content">
-                <img src="../Images/Home/icon-2.png" alt="">
-                <h3>gym for men</h3>
-                <p>From cutting-edge equipment and expertly crafted workout spaces to world-class amenities and a supportive community, we leave no stone unturned in providing you with an unparalleled fitness experience.</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="../Images/Home/f-img-3.jpg" alt="">
-            </div>
-            <div class="content">
-                <img src="../Images/Home/icon-3.png" alt="">
-                <h3>gym for women</h3>
-                <p>Don't settle for ordinary – choose extraordinary. Join us and let's embark on an incredible journey of fitness, growth, and fulfillment together.</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- features section ends -->
 
 <!-- trainers section starts  -->
 
@@ -347,9 +301,9 @@ $conn->close();
         </div>
 
         <div class="box">
-            <a href="../HTML/Calculators/cbc.html"><img src="../Images/Home/cbc.jpg" alt=""></a>
+            <a href="../HTML/Calculators/cbc.html"><img src="../Images/Home/cbc2.png" alt=""></a>
             <div class="content">
-                <span>Complete Blood Count</span>
+                <span>Calories Burned Calculator</span>
                 
                 <div class="share">
                 <a href="../HTML/Calculators/cbc.html" >  Calculate Your CBC</a>
@@ -364,91 +318,6 @@ $conn->close();
 </section>
 
 <!-- trainers section ends -->
-
-<!-- banner section starts  -->
-
-<section class="banner">
-
-    <span>Special Message for You</span>
-    <h3>In the realm of fitness freaks</h3>
-    <p>We are driven by an insatiable hunger for progress, constantly seeking new challenges to conquer and pushing our bodies to the limits. We embrace the discomfort, the burning muscles, and the relentless pursuit of improvement because we know that true growth lies just beyond our comfort zones. We are the masters of our own destiny, architects of our own bodies, and guardians of our own well-being. Our commitment to fitness is not a fleeting infatuation; it is a lifelong love affair with strength, resilience, and self-discovery. We understand that fitness is not just about physical transformation; it is a transformative journey that shapes our minds, instills discipline, and cultivates mental fortitude. We find solace in the rhythm of our breath, the symphony of weights clanking, and the camaraderie of like-minded individuals pushing towards greatness. </p>
-    
-
-</section>
-
-<!-- banner section ends -->
-
-<!-- review section starts  -->
-
-<section class="review">
-
-    <div class="information">
-        <span>testimonials</span>
-        <h3>what our clients says</h3>
-        <p>With a passionate team of experienced trainers and state-of-the-art facilities, we are dedicated to helping you reach your health and wellness goals. Whether you're a beginner taking your first steps on your fitness journey or an experienced athlete looking for a new challenge, we have a wide range of programs and classes tailored to meet your needs.</p>
-        <a href="#" class="btn">read more</a>
-    </div>
-
-    <div class="swiper review-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide slide">
-                <p>I cannot express how grateful I am for joining the fitness program. It has completely transformed my life and brought happiness back into my days. Before joining, I was constantly feeling sluggish and lacked the energy to do the things I loved.</p>
-                <div class="user">
-                    <img src="../Images/Home/pic-1.png" alt="">
-                    <div class="info">
-                        <h3>john</h3>
-                        <span>designer</span>
-                    </div>
-                    <i class="fas fa-quote-left"></i>
-                </div>
-            </div>
-
-            <div class="swiper-slide slide">
-                <p>Joining the fitness program has been an absolute game-changer for me. Not only have I experienced significant physical changes, such as weight loss and improved muscle tone, but my confidence has skyrocketed.</p>
-                <div class="user">
-                    <img src="../Images/Home/pic-2.png" alt="">
-                    <div class="info">
-                        <h3>sarah </h3>
-                        <span>Engineer</span>
-                    </div>
-                    <i class="fas fa-quote-left"></i>
-                </div>
-            </div>
-
-            <div class="swiper-slide slide">
-                <p>The structured workout routines, combined with the positive energy of the trainers and fellow participants, create an environment where I can truly unwind and focus on myself. The endorphins released during workouts have a tremendous impact on my mood, leaving me feeling uplifted and energized throughout the day.</p>
-                <div class="user">
-                    <img src="../Images/Home/pic-3.png" alt="">
-                    <div class="info">
-                        <h3> Arthur</h3>
-                        <span>HR</span>
-                    </div>
-                    <i class="fas fa-quote-left"></i>
-                </div>
-            </div>
-
-            <div class="swiper-slide slide">
-                <p>The trainers are not only knowledgeable but also incredibly encouraging, pushing me to reach new heights. With their guidance, I have achieved goals I never thought possible and surpassed my own expectations. This newfound confidence has spilled over into other areas of my life as well.</p>
-                <div class="user">
-                    <img src="../Images/Home/pic-4.png" alt="">
-                    <div class="info">
-                        <h3>Abigail</h3>
-                        <span>Professional Boxer</span>
-                    </div>
-                    <i class="fas fa-quote-left"></i>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- review section ends -->
 
 <!-- blogs section starts  -->
 
@@ -530,6 +399,144 @@ $conn->close();
 
 <!-- blogs section ends -->
 
+<!-- banner section starts  -->
+
+<section class="banner">
+
+    <span>Special Message for You</span>
+    <h3>In the realm of fitness freaks</h3>
+    <p>We are driven by an insatiable hunger for progress, constantly seeking new challenges to conquer and pushing our bodies to the limits. We embrace the discomfort, the burning muscles, and the relentless pursuit of improvement because we know that true growth lies just beyond our comfort zones. We are the masters of our own destiny, architects of our own bodies, and guardians of our own well-being. Our commitment to fitness is not a fleeting infatuation; it is a lifelong love affair with strength, resilience, and self-discovery. We understand that fitness is not just about physical transformation; it is a transformative journey that shapes our minds, instills discipline, and cultivates mental fortitude. We find solace in the rhythm of our breath, the symphony of weights clanking, and the camaraderie of like-minded individuals pushing towards greatness. </p>
+    
+
+</section>
+
+<!-- banner section ends -->
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> <span>gym features</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="../Images/Home/f-img-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="../Images/Home/icon-1.png" alt="">
+                <h3>body building</h3>
+                <p>Are you ready to elevate your fitness journey to new heights? Look no further than the ultimate destination for those who seek excellence in their pursuit of health and wellness.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box second">
+            <div class="image">
+                <img src="../Images/Home/f-img-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="../Images/Home/icon-2.png" alt="">
+                <h3>gym for men</h3>
+                <p>From cutting-edge equipment and expertly crafted workout spaces to world-class amenities and a supportive community, we leave no stone unturned in providing you with an unparalleled fitness experience.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="../Images/Home/f-img-3.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="../Images/Home/icon-3.png" alt="">
+                <h3>gym for women</h3>
+                <p>Don't settle for ordinary – choose extraordinary. Join us and let's embark on an incredible journey of fitness, growth, and fulfillment together.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+
+<!-- review section starts  -->
+
+<section class="review">
+
+    <div class="information">
+        <span>testimonials</span>
+        <h3>what our clients says</h3>
+        <p>With a passionate team of experienced trainers and state-of-the-art facilities, we are dedicated to helping you reach your health and wellness goals. Whether you're a beginner taking your first steps on your fitness journey or an experienced athlete looking for a new challenge, we have a wide range of programs and classes tailored to meet your needs.</p>
+        <a href="#" class="btn">read more</a>
+    </div>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <p>I cannot express how grateful I am for joining the fitness program. It has completely transformed my life and brought happiness back into my days. Before joining, I was constantly feeling sluggish and lacked the energy to do the things I loved.</p>
+                <div class="user">
+                    <img src="../Images/Home/pic-1.png" alt="">
+                    <div class="info">
+                        <h3>john</h3>
+                        <span>designer</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>Joining the fitness program has been an absolute game-changer for me. Not only have I experienced significant physical changes, such as weight loss and improved muscle tone, but my confidence has skyrocketed.</p>
+                <div class="user">
+                    <img src="../Images/Home/pic-2.png" alt="">
+                    <div class="info">
+                        <h3>sarah </h3>
+                        <span>Engineer</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>The structured workout routines, combined with the positive energy of the trainers and fellow participants, create an environment where I can truly unwind and focus on myself. The endorphins released during workouts have a tremendous impact on my mood, leaving me feeling uplifted and energized throughout the day.</p>
+                <div class="user">
+                    <img src="../Images/Home/pic-3.png" alt="">
+                    <div class="info">
+                        <h3> Arthur</h3>
+                        <span>HR</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>The trainers are not only knowledgeable but also incredibly encouraging, pushing me to reach new heights. With their guidance, I have achieved goals I never thought possible and surpassed my own expectations. This newfound confidence has spilled over into other areas of my life as well.</p>
+                <div class="user">
+                    <img src="../Images/Home/pic-4.png" alt="">
+                    <div class="info">
+                        <h3>Abigail</h3>
+                        <span>Professional Boxer</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- review section ends -->
+
+
+
 <!-- footer section starts  -->
 
 <section class="footer">
@@ -539,7 +546,7 @@ $conn->close();
         <div class="box">
             <h3>quick links</h3>
             <a class="links" href="#home">home</a>
-            <a class="links" href="#about">stats</a>
+            <a class="links" href="#about">Stats</a>
             <a class="links" href="#features">features</a>
            
             <a class="links" href="#trainers">Calculators</a>

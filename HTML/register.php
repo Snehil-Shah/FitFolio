@@ -61,7 +61,7 @@ $conn->close();
         <a href="#home">home</a>
         <a href="#about">about</a>
         <a href="#features">features</a>
-        <a href="#pricing">pricing</a>
+        
         <div class="calc-dropdown">
             <a href="#trainers" style="width: 150.1px; text-align: center; padding-left: 2.0039rem;">Calculators<span class="material-symbols-outlined">expand_more</span></a>
               <div class="calc-list">
@@ -75,7 +75,7 @@ $conn->close();
         <a href="#" class="login-topright"><p>Profile <i class="fas fa-user-edit"></i></p></a>
            <div class="calc-list2">
               <p style="font-size: 1.54rem; color: white; display: inline-block; padding-left: 2rem; padding-right: 2rem; padding-top: 1.5rem;"><?php echo $name ?> <br><br> <?php echo $subscription ?></p>
-              <a href="home.html" class="logout" style="width: 100%; font-size: 1.8rem; color: red; padding-top: 1.9rem;">Logout</a>
+              <a href="home.html" class="logout" style="width: 100%; font-size: 1.8rem; rgb(50, 182, 2); padding-top: 1.9rem;">Logout</a>
            </div>
         </div>
     </nav>
@@ -102,10 +102,10 @@ $conn->close();
         </div>
         <div class="remember-forgot">
             <label><input type="checkbox">Remember Me</label>
-            <a href="#">Forgot Password?</a>
+            <a href="#"><p style="color: green;">Forgot Password?</p>word?</a>
         </div>
         <input type="submit" class="login-button" value="Login">
-        <div class="no-acc-yet">Don't have an account yet? <a href="#" style="font-size: 115%;" class="register-link"> Register!</a></div>
+        <div class="no-acc-yet">Don't have an account yet? <a href="#" style="font-size: 115%;" class="register-link"> <p style="color: green;">Register!</p></a></div>
     </form>
 </div>
 <div class="register" id="registration-window">
@@ -166,7 +166,7 @@ $conn->close();
                 <div class="content">
                     <span>be strong, be fit</span>
                     <h3>Make yourself stronger than your excuses.</h3>
-                    <a href="#" class="btn">get started</a>
+                    <a href="#" class="btn">Welcome to Fitfolio <?php echo $name ?></a>
                 </div>
             </div>
 
@@ -196,7 +196,7 @@ $conn->close();
 
 <!-- home section ends -->
 
-<!-- about section starts  -->
+<!-- stats section starts  -->
 
 <section class="about" id="about">
 
@@ -205,25 +205,31 @@ $conn->close();
     </div>
 
     <div class="content">
-        <span>about us</span>
-        <h3 class="title">Every day is a chance to become better</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quia accusamus dicta inventore nobis obcaecati vero odio, id dolorum. Consequatur ex, aperiam deserunt nostrum perferendis illum unde ipsa? Consequatur, distinctio?</p>
+        <span>Your Stats</span>
+        <h3 class="title">The pain you feel today will be the strength you feel tomorrow.</h3>
+        <p>Here's a detailed description of your body:</p>
         <div class="box-container">
             <div class="box">
-                <h3><i class="fas fa-check"></i>body and mind</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                <h3><i class="fas fa-check"></i>AGE</h3>
+                <p>Age is not a limitation; it's a testament to the strength and resilience acquired through the years.
+                   <br> Age entered by you is <?php echo $age?>                </p>
             </div>
             <div class="box">
-                <h3><i class="fas fa-check"></i>healthy life</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                <h3><i class="fas fa-check"></i>HEIGHT</h3>
+                <p>Stand tall, for your height is a unique part of your identity. Embrace it with confidence.
+                   <br> Height entered by you is <?php echo $height?>cm                </p>
             </div>
             <div class="box">
-                <h3><i class="fas fa-check"></i>strategies</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                <h3><i class="fas fa-check"></i>WEIGHT</h3>
+                <p>You are more than your weight; you are a living, breathing masterpiece capable of so much more than a numerical value.
+                    <br>Weight entered by you is <?php echo $weight?>kg
+                </p>
             </div>
             <div class="box">
-                <h3><i class="fas fa-check"></i>workout</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                <h3><i class="fas fa-check"></i>SUBSCRIPTION</h3>
+                <p>Here we believe in transforming lives through the power of fitness.
+                    <br>Subscription chosen by you is: <?php echo $subscription?> 
+                </p>
             </div>
         </div>
         <a href="#" class="btn">read more</a>
@@ -231,7 +237,7 @@ $conn->close();
 
 </section>
 
-<!-- about section ends -->
+<!-- stats section ends -->
 
 <!-- features section starts  -->
 
@@ -248,7 +254,7 @@ $conn->close();
             <div class="content">
                 <img src="../Images/Home/icon-1.png" alt="">
                 <h3>body building</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                <p>Are you ready to elevate your fitness journey to new heights? Look no further than the ultimate destination for those who seek excellence in their pursuit of health and wellness.</p>
                 <a href="#" class="btn">read more</a>
             </div>
         </div>
@@ -260,7 +266,7 @@ $conn->close();
             <div class="content">
                 <img src="../Images/Home/icon-2.png" alt="">
                 <h3>gym for men</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                <p>From cutting-edge equipment and expertly crafted workout spaces to world-class amenities and a supportive community, we leave no stone unturned in providing you with an unparalleled fitness experience.</p>
                 <a href="#" class="btn">read more</a>
             </div>
         </div>
@@ -272,7 +278,7 @@ $conn->close();
             <div class="content">
                 <img src="../Images/Home/icon-3.png" alt="">
                 <h3>gym for women</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                <p>Don't settle for ordinary – choose extraordinary. Join us and let's embark on an incredible journey of fitness, growth, and fulfillment together.</p>
                 <a href="#" class="btn">read more</a>
             </div>
         </div>
@@ -283,114 +289,49 @@ $conn->close();
 
 <!-- features section ends -->
 
-<!-- pricing section starts  -->
-
-<section class="pricing" id="pricing">
-
-    <div class="information">
-        <span>pricing plan</span>
-        <h3>affordable pricing plan for your</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolore excepturi ea suscipit fugiat cum quae, rerum optio mollitia! Tempora?</p>
-        <p> <i class="fas fa-check"></i> cardio exercise </p>
-        <p> <i class="fas fa-check"></i> weight lifting </p>
-        <p> <i class="fas fa-check"></i> diet plans </p>
-        <p> <i class="fas fa-check"></i> overall results </p>
-        <a href="#" class="btn">all pricing</a>
-    </div>
-
-    <div class="plan basic">
-        <h3>basic plan</h3>
-        <div class="price"><span>$</span>30<span>/mo</span></div>
-       <div class="list">
-        <p> <i class="fas fa-check"></i> personal training </p>
-        <p> <i class="fas fa-check"></i> cardio exercise </p>
-        <p> <i class="fas fa-check"></i> weight lifting </p>
-        <p> <i class="fas fa-check"></i> diet plans </p>
-        <p> <i class="fas fa-check"></i> overall results </p>
-       </div>
-       <a href="#" class="btn">get started</a>
-    </div>
-
-    <div class="plan">
-        <h3>premium plan</h3>
-        <div class="price"><span>$</span>90<span>/mo</span></div>
-       <div class="list">
-        <p> <i class="fas fa-check"></i> personal training </p>
-        <p> <i class="fas fa-check"></i> cardio exercise </p>
-        <p> <i class="fas fa-check"></i> weight lifting </p>
-        <p> <i class="fas fa-check"></i> diet plans </p>
-        <p> <i class="fas fa-check"></i> overall results </p>
-       </div>
-       <a href="#" class="btn">get started</a>
-    </div>
-
-</section>
-
-<!-- pricing section ends -->
-
 <!-- trainers section starts  -->
 
 <section class="trainers" id="trainers">
 
-    <h1 class="heading"> <span>expert trainers</span> </h1>
+    <h1 class="heading"> <span>personal Calculators</span> </h1>
 
     <div class="box-container">
 
         <div class="box">
-            <img src="../Images/Home/trainer-1.jpg" alt="">
+            <img src="../Images/Home/bmi.jpg" alt="">
             <div class="content">
-                <span>expert trainer</span>
-                <h3>john deo</h3>
+                <span>Body Mass Index</span>
+                
                 <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-pinterest"></a>
-                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="../HTML/Calculators/bmi.html" >  Calculate Your BMI</a>
+                    
                 </div>
             </div>
         </div>
 
         <div class="box">
-            <img src="../Images/Home/trainer-2.jpg" alt="">
+            <img src="../Images/Home/bmr.jpg" alt="">
             <div class="content">
-                <span>expert trainer</span>
-                <h3>john deo</h3>
+                <span>Basal Metabolic Rate</span>
+
                 <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-pinterest"></a>
-                    <a href="#" class="fab fa-linkedin"></a>
+                <a href="../HTML/Calculators/bmr.html" >  Calculate Your BMR</a>
                 </div>
             </div>
         </div>
 
         <div class="box">
-            <img src="../Images/Home/trainer-3.jpg" alt="">
+            <img src="../Images/Home/cbc.jpg" alt="">
             <div class="content">
-                <span>expert trainer</span>
-                <h3>john deo</h3>
+                <span>Complete Blood Count</span>
+                
                 <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-pinterest"></a>
-                    <a href="#" class="fab fa-linkedin"></a>
+                <a href="../HTML/Calculators/cbc.html" >  Calculate Your CBC</a>
                 </div>
             </div>
         </div>
 
-        <div class="box">
-            <img src="../Images/Home/trainer-4.jpg" alt="">
-            <div class="content">
-                <span>expert trainer</span>
-                <h3>john deo</h3>
-                <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-pinterest"></a>
-                    <a href="#" class="fab fa-linkedin"></a>
-                </div>
-            </div>
-        </div>
+       
 
     </div>
 
@@ -398,18 +339,15 @@ $conn->close();
 
 <!-- trainers section ends -->
 
-<!-- banner section starts  -->
 
 <section class="banner">
 
-    <span>join us now</span>
-    <h3>get upto 50% discount</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat architecto nesciunt aut sapiente quis inventore quam vitae quod illum incidunt.</p>
-    <a href="#" class="btn">get discount</a>
+    <span>Special Message for You</span>
+    <h3>In the realm of fitness freaks</h3>
+    <p>We are driven by an insatiable hunger for progress, constantly seeking new challenges to conquer and pushing our bodies to the limits. We embrace the discomfort, the burning muscles, and the relentless pursuit of improvement because we know that true growth lies just beyond our comfort zones. We are the masters of our own destiny, architects of our own bodies, and guardians of our own well-being. Our commitment to fitness is not a fleeting infatuation; it is a lifelong love affair with strength, resilience, and self-discovery. We understand that fitness is not just about physical transformation; it is a transformative journey that shapes our minds, instills discipline, and cultivates mental fortitude. We find solace in the rhythm of our breath, the symphony of weights clanking, and the camaraderie of like-minded individuals pushing towards greatness. </p>
+    
 
 </section>
-
-<!-- banner section ends -->
 
 <!-- review section starts  -->
 
@@ -418,7 +356,7 @@ $conn->close();
     <div class="information">
         <span>testimonials</span>
         <h3>what our clients says</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas praesentium asperiores fugiat, excepturi odit obcaecati a voluptatibus earum quisquam?</p>
+        <p>With a passionate team of experienced trainers and state-of-the-art facilities, we are dedicated to helping you reach your health and wellness goals. Whether you're a beginner taking your first steps on your fitness journey or an experienced athlete looking for a new challenge, we have a wide range of programs and classes tailored to meet your needs.</p>
         <a href="#" class="btn">read more</a>
     </div>
 
@@ -427,11 +365,11 @@ $conn->close();
         <div class="swiper-wrapper">
 
             <div class="swiper-slide slide">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo.</p>
+                <p>I cannot express how grateful I am for joining the fitness program. It has completely transformed my life and brought happiness back into my days. Before joining, I was constantly feeling sluggish and lacked the energy to do the things I loved.</p>
                 <div class="user">
                     <img src="../Images/Home/pic-1.png" alt="">
                     <div class="info">
-                        <h3>john deo</h3>
+                        <h3>john</h3>
                         <span>designer</span>
                     </div>
                     <i class="fas fa-quote-left"></i>
@@ -439,36 +377,36 @@ $conn->close();
             </div>
 
             <div class="swiper-slide slide">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo.</p>
+                <p>Joining the fitness program has been an absolute game-changer for me. Not only have I experienced significant physical changes, such as weight loss and improved muscle tone, but my confidence has skyrocketed.</p>
                 <div class="user">
                     <img src="../Images/Home/pic-2.png" alt="">
                     <div class="info">
-                        <h3>john deo</h3>
-                        <span>designer</span>
+                        <h3>sarah </h3>
+                        <span>Engineer</span>
                     </div>
                     <i class="fas fa-quote-left"></i>
                 </div>
             </div>
 
             <div class="swiper-slide slide">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo.</p>
+                <p>The structured workout routines, combined with the positive energy of the trainers and fellow participants, create an environment where I can truly unwind and focus on myself. The endorphins released during workouts have a tremendous impact on my mood, leaving me feeling uplifted and energized throughout the day.</p>
                 <div class="user">
                     <img src="../Images/Home/pic-3.png" alt="">
                     <div class="info">
-                        <h3>john deo</h3>
-                        <span>designer</span>
+                        <h3> Arthur</h3>
+                        <span>HR</span>
                     </div>
                     <i class="fas fa-quote-left"></i>
                 </div>
             </div>
 
             <div class="swiper-slide slide">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, quo.</p>
+                <p>The trainers are not only knowledgeable but also incredibly encouraging, pushing me to reach new heights. With their guidance, I have achieved goals I never thought possible and surpassed my own expectations. This newfound confidence has spilled over into other areas of my life as well.</p>
                 <div class="user">
                     <img src="../Images/Home/pic-4.png" alt="">
                     <div class="info">
-                        <h3>john deo</h3>
-                        <span>designer</span>
+                        <h3>Abigail</h3>
+                        <span>Professional Boxer</span>
                     </div>
                     <i class="fas fa-quote-left"></i>
                 </div>
@@ -572,9 +510,9 @@ $conn->close();
         <div class="box">
             <h3>quick links</h3>
             <a class="links" href="#home">home</a>
-            <a class="links" href="#about">about</a>
+            <a class="links" href="#about"> Stats</a>
             <a class="links" href="#features">features</a>
-            <a class="links" href="#pricing">pricing</a>
+            
             <a class="links" href="#trainers">trainers</a>
             <a class="links" href="#blogs">blogs</a>
         </div>
@@ -590,9 +528,9 @@ $conn->close();
         </div>
 
         <div class="box">
-            <h3>opening hours</h3>
-            <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
-            <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
+            <h3>CONTACT</h3>
+           
+          
             <p> <i class="fas fa-envelope"></i> fitfolio@gmail.com </p>
             <p> <i class="fas fa-map"></i> mumbai, india - 400104 </p>
             <div class="share">

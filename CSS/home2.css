@@ -29,7 +29,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #f00;
+  background:  rgb(50, 182, 2);
 }
 
 body {
@@ -65,7 +65,7 @@ input{
 
 .heading span {
   font-size: 3rem;
-  color: #f00;
+  color:  rgb(50, 182, 2);
   background: #000;
   padding: .5rem 1.5rem;
   border: 0.1rem solid #aaa;
@@ -77,7 +77,7 @@ input{
   display: inline-block;
   padding: 1rem 2.8rem;
   padding-right: 3rem;
-  background: linear-gradient(130deg, #f00 93%, transparent 90%);
+  background: linear-gradient(130deg,  rgb(50, 182, 2) 93%, transparent 90%);
   color: #fff;
   cursor: pointer;
   font-size: 1.7rem;
@@ -114,7 +114,7 @@ input{
 }
 
 .header .logo span {
-  color: #f00;
+  color:  rgb(50, 182, 2);
 }
 
 .header .navbar a {
@@ -186,14 +186,14 @@ input{
 }
 
 #login-topright:hover{
-  background-color: #f00;
+  background-color:  rgb(50, 182, 2);
   border: rgba(255, 255, 255, 0) 2px solid;;
   padding: 7px 20px;
   border-radius: 0;
 }
 
 .header .navbar a:hover {
-  background: #f00;
+  background:  rgb(50, 182, 2);
 }
 
 #menu-btn {
@@ -330,12 +330,12 @@ input:focus + label, input:valid + label{
 }
 
 .remember-forgot label input{
-  accent-color: red;
+  accent-rgb(50, 182, 2);
   margin-right: 5px;
 }
 
 .wrapper a{
-  color: red;
+  rgb(50, 182, 2);
   text-decoration: unset;
   transition: none;
 }
@@ -362,7 +362,7 @@ input:focus + label, input:valid + label{
 }
 
 .login-button:hover{
-  background-color: #f00;
+  background-color:  rgb(50, 182, 2);
   color: #fff;
   border-radius: 0;
 }
@@ -383,7 +383,7 @@ input:focus + label, input:valid + label{
 }
 
 .close-btn:hover{
-  color: #f00;
+  color:  rgb(50, 182, 2);
   text-shadow: rgb(37, 10, 10) 1px 0 10px;
 }
 
@@ -412,7 +412,7 @@ input:focus + label, input:valid + label{
 
 .home .slide .content span {
   font-size: 2rem;
-  color: #f00;
+  color:  rgb(50, 182, 2);
   display: block;
 }
 
@@ -430,7 +430,7 @@ input:focus + label, input:valid + label{
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #f00;
+  background:  rgb(50, 182, 2);
 }
 
 .about {
@@ -456,7 +456,7 @@ input:focus + label, input:valid + label{
   content: '';
   position: absolute;
   z-index: -1;
-  background: #f00;
+  background:  rgb(50, 182, 2);
   height: 15rem;
   width: 15rem;
 }
@@ -484,7 +484,7 @@ input:focus + label, input:valid + label{
 
 .about .content span {
   font-size: 2rem;
-  color: #f00;
+  color:  rgb(50, 182, 2);
 }
 
 .about .content .title {
@@ -523,7 +523,7 @@ input:focus + label, input:valid + label{
 
 .about .content .box-container .box h3 i {
   padding-right: 1.5rem;
-  color: #f00;
+  color:  rgb(50, 182, 2);
 }
 
 .features .box-container {
@@ -581,7 +581,7 @@ input:focus + label, input:valid + label{
 
 .features .box-container .box .content h3 {
   font-size: 2rem;
-  color: #f00;
+  color:  rgb(50, 182, 2);
 }
 
 .features .box-container .box .content p {
@@ -601,7 +601,7 @@ input:focus + label, input:valid + label{
 
 .pricing .information span {
   font-size: 2rem;
-  color: #f00;
+  color:  rgb(50, 182, 2);
 }
 
 .pricing .information h3 {
@@ -619,7 +619,7 @@ input:focus + label, input:valid + label{
 
 .pricing .information p i {
   padding-right: 1rem;
-  color: #f00;
+  color:  rgb(50, 182, 2);
 }
 
 .pricing .plan {
@@ -640,7 +640,7 @@ input:focus + label, input:valid + label{
 .pricing .plan .price {
   font-size: 5rem;
   font-weight: bolder;
-  color: #f00;
+  color:  rgb(50, 182, 2);
 }
 
 .pricing .plan .price span {
@@ -661,7 +661,7 @@ input:focus + label, input:valid + label{
 
 .pricing .plan .list p i {
   padding-right: 1rem;
-  color: #f00;
+  color:  rgb(50, 182, 2);
 }
 
 .trainers .box-container {
@@ -703,7 +703,7 @@ input:focus + label, input:valid + label{
 
 .trainers .box-container .box .content span {
   font-size: 1.5rem;
-  color: #f00;
+  color:  rgb(50, 182, 2);
 }
 
 .trainers .box-container .box .content h3 {
@@ -725,7 +725,7 @@ input:focus + label, input:valid + label{
 }
 
 .trainers .box-container .box .content .share a:hover {
-  color: #f00;
+  color:  rgb(50, 182, 2);
 }
 
 .banner {
@@ -739,7 +739,7 @@ input:focus + label, input:valid + label{
 
 .banner span {
   font-size: 2rem;
-  color: #f00;
+  color:  rgb(50, 182, 2);
 }
 
 .banner h3 {
@@ -777,7 +777,7 @@ input:focus + label, input:valid + label{
 
 .review .information span {
   font-size: 2rem;
-  color: #f00;
+  color:  rgb(50, 182, 2);
 }
 
 .review .information h3 {
@@ -835,7 +835,7 @@ input:focus + label, input:valid + label{
 }
 
 .review .review-slider .slide .user span {
-  color: #f00;
+  color:  rgb(50, 182, 2);
   font-size: 1.5rem;
 }
 
@@ -843,7 +843,7 @@ input:focus + label, input:valid + label{
   font-size: 5rem;
   margin-left: auto;
   margin-right: 2rem;
-  color: #f00;
+  color:  rgb(50, 182, 2);
 }
 
 .blogs .slide {
@@ -879,7 +879,7 @@ input:focus + label, input:valid + label{
 }
 
 .blogs .slide .content .link a {
-  color: #f00;
+  color:  rgb(50, 182, 2);
 }
 
 .blogs .slide .content .link a:hover {
@@ -926,7 +926,7 @@ input:focus + label, input:valid + label{
 }
 
 .footer .box-container .box .links:hover {
-  color: #f00;
+  color:  rgb(50, 182, 2);
 }
 
 .footer .box-container .box p {
@@ -937,7 +937,7 @@ input:focus + label, input:valid + label{
 
 .footer .box-container .box p i {
   padding-right: .5rem;
-  color: #f00;
+  color:  rgb(50, 182, 2);
 }
 
 .footer .box-container .box .share {
@@ -957,7 +957,7 @@ input:focus + label, input:valid + label{
 }
 
 .footer .box-container .box .share a:hover {
-  background: #f00;
+  background:  rgb(50, 182, 2);
 }
 
 .footer .box-container .box form .email {
@@ -980,7 +980,7 @@ input:focus + label, input:valid + label{
 }
 
 .credit span {
-  color: #f00;
+  color:  rgb(50, 182, 2);
 }
 
 @media (max-width: 991px) {

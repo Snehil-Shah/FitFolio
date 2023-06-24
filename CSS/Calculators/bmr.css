@@ -29,7 +29,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #f00;
+  background:  rgb(50, 182, 2);
 }
 
 body {
@@ -61,7 +61,7 @@ body {
   }
   
   .logo span {
-    color: #f00;
+    color:  rgb(50, 182, 2);
   }
 h1{
     font-size: 4rem;
@@ -99,7 +99,7 @@ label{
   text-align: end;
 }
 button:hover{
-    background-color: #f00;
+    background-color:  rgb(50, 182, 2);
   color: #fff;
   border-radius: 0;
 }

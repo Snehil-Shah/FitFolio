@@ -324,7 +324,7 @@ $conn->close();
     <div class="box-container">
 
         <div class="box">
-            <img src="../Images/Home/bmi.jpg" alt="">
+            <a href="../HTML/Calculators/bmi.html"><img src="../Images/Home/bmi.jpg" alt=""></a>
             <div class="content">
                 <span>Body Mass Index</span>
                 
@@ -336,7 +336,7 @@ $conn->close();
         </div>
 
         <div class="box">
-            <img src="../Images/Home/bmr.jpg" alt="">
+            <a href="../HTML/Calculators/bmr.html"><img src="../Images/Home/bmr.jpg" alt=""></a>
             <div class="content">
                 <span>Basal Metabolic Rate</span>
 
@@ -347,7 +347,7 @@ $conn->close();
         </div>
 
         <div class="box">
-            <img src="../Images/Home/cbc.jpg" alt="">
+            <a href="../HTML/Calculators/cbc.html"><img src="../Images/Home/cbc.jpg" alt=""></a>
             <div class="content">
                 <span>Complete Blood Count</span>
                 

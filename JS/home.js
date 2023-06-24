@@ -17,6 +17,10 @@ var swiper = new Swiper(".home-slider", {
     effect: "fade",
     grabCursor: true,
     loop:true,
+    autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+    },
     centeredSlides: true,
     pagination: {
       el: ".swiper-pagination",

@@ -205,30 +205,30 @@ $conn->close();
     </div>
 
     <div class="content">
-        <span>Your Stats</span>
+        <span style="font-size: 2.5rem;">Your Stats</span>
         <h3 class="title">The pain you feel today will be the strength you feel tomorrow.</h3>
         <p>Here's a detailed description of your body:</p>
         <div class="box-container">
             <div class="box">
                 <h3><i class="fas fa-check"></i>AGE</h3>
                 <p>Age is not a limitation, it's a testament to the strength and resilience acquired through the years.
-                   <br> You are <?php echo $age?> years young.               </p>
+                   <br> You are <span style="color: rgb(50, 182, 2); font-size: 1.5rem;"><?php echo $age?> years</span> young.               </p>
             </div>
             <div class="box">
                 <h3><i class="fas fa-check"></i>HEIGHT</h3>
                 <p>Stand tall, for your height is a unique part of your identity. Embrace it with confidence.
-                   <br> You stand <?php echo $height?> cm Tall.          </p>
+                   <br> You stand <span style="color: rgb(50, 182, 2); font-size: 1.5rem;"><?php echo $height?> cm</span> Tall.          </p>
             </div>
             <div class="box">
                 <h3><i class="fas fa-check"></i>WEIGHT</h3>
                 <p>You are more than your weight; you are a living, breathing masterpiece capable of so much more than a numerical value.
-                    <br>Your weight is <?php echo $weight?> kg.
+                    <br>Your weight is <span style="color: rgb(50, 182, 2); font-size: 1.5rem;"><?php echo $weight?> kg</span>.
                 </p>
             </div>
             <div class="box">
                 <h3><i class="fas fa-check"></i>SUBSCRIPTION</h3>
                 <p>Here we believe in transforming lives through the power of fitness.
-                    <br>Your Subscription: <?php echo $subscription?> Plan.
+                    <br>Your Subscription: <span style="color: rgb(50, 182, 2); font-size: 1.5rem;"><?php echo $subscription?></span> Plan.
                 </p>
             </div>
         </div>

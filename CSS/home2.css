@@ -330,12 +330,12 @@ input:focus + label, input:valid + label{
 }
 
 .remember-forgot label input{
-  accent-rgb(50, 182, 2);
+  accent-color: rgb(50, 182, 2);
   margin-right: 5px;
 }
 
 .wrapper a{
-  rgb(50, 182, 2);
+  accent-color: rgb(50, 182, 2);
   text-decoration: unset;
   transition: none;
 }

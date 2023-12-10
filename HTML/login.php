@@ -17,7 +17,7 @@
 
     <!-- drop down arrow google-font link -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
+
 </head>
 <body>
 
@@ -28,14 +28,14 @@ $email=$_POST["email"];
 $password=$_POST["password"];
 
 //Creating connection to fitfolio database
-$conn= new mysqli("localhost","root","password","fitfolio");
+$conn= new mysqli("database","root","password","fitfolio");
 
 //Checking connection
 if($conn->connect_error){
 die("connection failed:".$conn->connect_error);
 }
 
-//Fetching Data 
+//Fetching Data
 $sql = "SELECT Email, Pass FROM users";
 $result = $conn->query($sql);
 
@@ -53,14 +53,14 @@ if ($trigger==0){
 $conn->close();
 
 //Creating connection to fitfolio database
-$conn= new mysqli("localhost","root","password","fitfolio");
+$conn= new mysqli("database","root","password","fitfolio");
 
 //Checking connection
 if($conn->connect_error){
 die("connection failed:".$conn->connect_error);
 }
 
-//Fetching Data 
+//Fetching Data
 $sql = "SELECT UserName, Subscription, Age, Height_cm, Weight_kg FROM users WHERE Email='$email'";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
@@ -72,7 +72,7 @@ $weight=$row["Weight_kg"];
 $subscription=$row["Subscription"];
 
 $conn->close();
-  
+
 ?>
 
 <!-- header section starts      -->
@@ -87,7 +87,7 @@ $conn->close();
         <a href="#home">home</a>
         <a href="#about">Stats</a>
         <a href="#features">features</a>
-        
+
         <div class="calc-dropdown">
             <a href="#trainers" style="width: 150.1px; text-align: center; padding-left: 2.0039rem;">Calculators<span class="material-symbols-outlined">expand_more</span></a>
               <div class="calc-list">
@@ -95,7 +95,7 @@ $conn->close();
                   <a href="Calculators/bmr.html">BMR</a>
                   <a href="Calculators/cbc.html">CBC</a>
               </div>
-          </div>  
+          </div>
         <a href="#blogs">blogs</a>
         <div class="calc-dropdown">
         <a href="#" class="login-topright"><p>Profile <i class="fas fa-user-edit"></i></p></a>
@@ -116,7 +116,7 @@ $conn->close();
 <span class="close-btn">x</span>
 <div class="login" id="login-window">
     <h2 style="text-transform: uppercase; font-size: 2.5rem; color: aliceblue; width: 100%; text-align: center;">Login</h2>
-    
+
     <form action="../Backend/login.php" method="post">
         <div class="input-space" id="Email-input-box">
             <input type="text" name="email" required id="emailinput">
@@ -281,10 +281,10 @@ $conn->close();
             <a href="../HTML/Calculators/bmi.html"><img src="../Images/Home/bmi.jpg" alt=""></a>
             <div class="content">
                 <span>Body Mass Index</span>
-                
+
                 <div class="share">
                     <a href="../HTML/Calculators/bmi.html" >  Calculate Your BMI</a>
-                    
+
                 </div>
             </div>
         </div>
@@ -304,14 +304,14 @@ $conn->close();
             <a href="../HTML/Calculators/cbc.html"><img src="../Images/Home/cbc2.png" alt=""></a>
             <div class="content">
                 <span>Calories Burned Calculator</span>
-                
+
                 <div class="share">
                 <a href="../HTML/Calculators/cbc.html" >  Calculate Your CBC</a>
                 </div>
             </div>
         </div>
 
-       
+
 
     </div>
 
@@ -340,7 +340,7 @@ $conn->close();
                     <a href="../HTML/blog1/blog1.html" class="btn">read more</a>
                 </div>
             </div>
-            
+
             <div class="swiper-slide slide">
                 <div class="image">
                     <img src="../Images/Home/blog-2.jpg" alt="">
@@ -356,7 +356,7 @@ $conn->close();
             <div class="swiper-slide slide">
                 <div class="image">
                     <img src="../Images/Home/blog-3.jpg" alt="">
-                </div>  
+                </div>
                 <div class="content">
                     <div class="link"> <a href="#">FitFolio Originals</a> <span>|</span> <a href="#">1st april, 2023</a> </div>
                     <h3>3 Ways to Support Your Hormone Health and Wellness with Breathwork</h3>
@@ -406,7 +406,7 @@ $conn->close();
     <span>Special Message for You</span>
     <h3>In the realm of fitness freaks</h3>
     <p>We are driven by an insatiable hunger for progress, constantly seeking new challenges to conquer and pushing our bodies to the limits. We embrace the discomfort, the burning muscles, and the relentless pursuit of improvement because we know that true growth lies just beyond our comfort zones. We are the masters of our own destiny, architects of our own bodies, and guardians of our own well-being. Our commitment to fitness is not a fleeting infatuation; it is a lifelong love affair with strength, resilience, and self-discovery. We understand that fitness is not just about physical transformation; it is a transformative journey that shapes our minds, instills discipline, and cultivates mental fortitude. We find solace in the rhythm of our breath, the symphony of weights clanking, and the camaraderie of like-minded individuals pushing towards greatness. </p>
-    
+
 
 </section>
 
@@ -548,7 +548,7 @@ $conn->close();
             <a class="links" href="#home">home</a>
             <a class="links" href="#about">Stats</a>
             <a class="links" href="#features">features</a>
-           
+
             <a class="links" href="#trainers">Calculators</a>
             <a class="links" href="#blogs">blogs</a>
         </div>
@@ -565,8 +565,8 @@ $conn->close();
 
         <div class="box">
             <h3>CONTACT</h3>
-           
-            
+
+
             <p> <i class="fas fa-envelope"></i> fitfolio@gmail.com </p>
             <p> <i class="fas fa-map"></i> mumbai, india - 400104 </p>
             <div class="share">

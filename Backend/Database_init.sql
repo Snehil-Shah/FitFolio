@@ -1,7 +1,7 @@
 CREATE DATABASE fitfolio;
 USE fitfolio;
 
-CREATE TABLE Users (
+CREATE TABLE users (
     Email varchar(35),
     Pass varchar(30),
     UserName varchar(30),
